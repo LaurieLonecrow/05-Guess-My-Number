@@ -11,13 +11,12 @@
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 let highscore = 0;
-
 const displayMessage = function(message) {
   document.querySelector('.message').textContent =
     (message);
 }
 
-document.querySelector('.check').addEventListener('click', function() {
+const clickEnter = function() {
   const guess = Number(document.querySelector('.guess').value);
   if (!guess) {
     //document.querySelector('.message').textContent =
@@ -45,8 +44,16 @@ document.querySelector('.check').addEventListener('click', function() {
       displayMessage("You lost the game!");
     }
   }
-});
+};
 
+document.querySelector('.check').addEventListener('click', function() {
+  clickEnter()
+});
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') {
+    clickEnter();
+  }
+});
 
 document.querySelector('.again').addEventListener('click', function() {
   score = 20;
