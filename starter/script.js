@@ -46,9 +46,7 @@ const clickEnter = function() {
   }
 };
 
-document.querySelector('.check').addEventListener('click', function() {
-  clickEnter()
-});
+document.querySelector('.check').addEventListener('click', clickEnter);
 document.addEventListener('keydown', function(e) {
   if (e.key === 'Enter') {
     clickEnter();
