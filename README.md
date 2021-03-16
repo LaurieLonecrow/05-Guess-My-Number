@@ -1,0 +1,2 @@
+# 05-Guess-My-Number
+This is a project I built with a Javascript Tutorial.  The main focus was to accurately create the Javascript functionality for the Guess My Number game by creating a random number, providing prompts to the player for each guess, and scoring the player's performance.  The HTML and CSS was provided as a part of the tutorial.  It can be viewed here: https://laurielonecrow.github.io/05-Guess-My-Number/starter/. Have a go at it!
